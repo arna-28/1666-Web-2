@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance and Counseling</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="career-mentorship.html">Career Counselling Programme</a></li>
+                <li><a href="career-resources.html">Career Resources</a></li>
+                <li><a href="scholarship.html">Scholarships</a></li>
+            </ul>
+        </nav>
+        <div class="toggle-container">
+            <input type="checkbox" id="theme-toggle">
+            <label for="theme-toggle" class="toggle-label">Dark Mode</label>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="hero-content">
+            <h2>Empowering Your Future</h2>
+            <p>Helping students make informed career choices through innovative solutions.</p>
+            <a href="#solutions" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h3>About Us</h3>
+        <p>We provide comprehensive career counseling and guidance programs, enabling students to explore a wide range of career opportunities and align their education with their passions and skills.</p>
+    </section>
+
+    <section id="solutions">
+        <h3>Our Solutions</h3>
+        <input type="text" id="searchInput" placeholder="Search solutions..." onkeyup="searchSolutions()">
+        <div class="grid">
+            <div class="solution-card" data-title="AI-Powered Career Guidance">
+                <h4>AI-Powered Career Guidance</h4>
+                <p>Leverage AI to provide personalized career advice based on your strengths, interests, and market demands.</p>
+            </div>
+            <div class="solution-card" data-title="Career Mentorship Programs">
+                <h4>Career Mentorship Programs</h4>
+                <p>Connect with industry professionals who offer guidance and support as you explore your chosen career path.</p>
+            </div>
+            <div class="solution-card" data-title="Interactive Career Exploration Tools">
+                <h4>Interactive Career Exploration Tools</h4>
+                <p>Discover various careers through engaging virtual simulations, videos, and interactive content.</p>
+            </div>
+            <div class="solution-card" data-title="Comprehensive Career Resource Portals">
+                <h4>Comprehensive Career Resource Portals</h4>
+                <p>Access a vast library of career options, required skills, educational pathways, and current job market trends.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Career Guidance Initiative | <a href="#contact">Contact Us</a></p>
+
+        <form id="contact-form">
+            <h3>Contact Us</h3>
+            <div class="contact-form-group">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </footer>
+
+    <button id="back-to-top" title="Back to Top">&uarr;</button>
+
+    <script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    width: 50px;
+    top: 50%;
+    transform: translateY(-50%); /* Center the logo vertically */
+}
+
+header h1, header p {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.career-card {
+    background-color: rgba(200, 244, 242, 0.986);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.career-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(238, 74, 3, 0.856);
+}
+
+.career-card h2 {
+    font-size: 1.8em;
+    color: #3b5998;
+    margin-bottom: 10px;
+}
+
+.career-card p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.view-details {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-details:hover {
+    background-color: #218838;
+}
+
+.details {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.details h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.details ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+footer {
+    background-color: #3b5998;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}

@@ -1,0 +1,213 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    height: 50px; /* Adjust based on your logo size */
+}
+
+.header-title {
+    flex: 1;
+    text-align: center;
+    font-size: 1.8em;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #d9d2d2;
+    box-shadow: 0 0 8px rgba(15, 41, 146, 0.7);
+}
+
+.dropdown-icon {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* Main Content Styles */
+.resources-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.resources-section h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.resources-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#resourceSearchInput {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.resource-card {
+    background-color:rgba(185, 229, 244, 0.986);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(156, 6, 6, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.resource-card:hover {
+    transform: scale(1.05);
+}
+
+.resource-card h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.resource-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-title {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    .resource-card {
+        width: 100%;
+    }
+}
+/* Button Styles */
+.explore-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Change as needed */
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.explore-button:hover {
+    background-color: #0056b3; /* Change as needed */
+    transform: scale(1.05);
+}

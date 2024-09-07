@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.scholarship {
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.scholarship h2 {
+    margin-top: 0;
+}
+
+.scholarship-details p {
+    margin: 5px 0;
+}
+
+.apply-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #310cd2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.apply-button:hover {
+    background-color: #310cd2;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #310cd2;
+    color: white;
+    margin-top: 30px;
+}

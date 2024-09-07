@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Add your CSS file here -->
+</head>
+<body>
+    <div class="form-container">
+        <form action="submit_form.php" method="POST">
+            <h1>Personal Information Form</h1>
+            
+            <!-- Name Field -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <!-- Phone Number Field (Optional) -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+            
+            <!-- 10th Results Field -->
+            <label for="10th-results">10th Results:</label>
+            <input type="text" id="10th-results" name="10th-results" required>
+            
+            <!-- 12th Results Field -->
+            <label for="12th-results">12th Results:</label>
+            <input type="text" id="12th-results" name="12th-results" required>
+            
+            <!-- 12th Stream Field -->
+            <label for="12th-stream">12th Stream:</label>
+            <input type="text" id="12th-stream" name="12th-stream" required>
+            
+            <!-- Fields Interested In Dropdown -->
+            <label for="fields-interested">Fields Interested In:</label>
+            <select id="fields-interested" name="fields-interested" required>
+                <option value="">Select an option</option>
+                <option value="Architect">Architect</option>
+                <option value="Actor">Actor</option>
+                <option value="Animator">Animator</option>
+                <option value="Army-Officer">Army Officer</option>
+                <option value="Astronaut">Astronaut</option>
+                <option value="Banker">Banker</option>
+                <option value="Chef">Chef</option>
+                <option value="Dancer">Dancer</option>
+                <option value="Doctor">Doctor</option>
+                <option value="Engineer">Engineer</option>
+                <option value="Fashion-Designer">Fashion Designer</option>
+                <option value="Journalist">Journalist</option>
+                <option value="Lawyer">Lawyer</option>
+                <option value="MBA">MBA</option>
+                <option value="Pilot">Pilot</option>
+                <option value="Criminologist">Criminologist</option>
+                <option value="Media">Media</option>
+                <option value="Journalism">Journalism</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Scientist">Scientist</option>
+                <option value="Sports">Sports</option>
+                <option value="Veterinarian">Veterinarian</option>
+                <option value="Writer">Writer</option>
+            </select>
+            
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

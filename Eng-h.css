@@ -1,0 +1,144 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center-aligns the items */
+    position: relative;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.logo-container {
+    position: absolute;
+    left: 20px; /* Keeps the logo on the left */
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+header h1 {
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Spacer is used to keep the flexbox layout symmetrical */
+.spacer {
+    width: 60px; /* Same width as the logo for symmetry */
+    height: 60px;
+}
+
+/* Intro Section Styling */
+.intro {
+    padding: 50px; /* Adjust padding as needed */
+    margin-bottom: 30px;
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between image and text */
+}
+
+.intro-image {
+    flex: 1;
+    max-width: 50%; /* Adjust size as needed */
+    padding-right: 20px; /* Space between image and text */
+}
+
+.intro-image img {
+    width: 100%; /* Ensure the image fills its container */
+    height: auto;
+}
+
+.intro-text {
+    flex: 2;
+    max-width: 50%; /* Adjust size as needed */
+    background-color: #c2c1c1; /* Change background color as needed */
+    padding: 20px; /* Optional: add padding for better spacing */
+    border-radius: 8px; /* Optional: add border-radius for rounded corners */
+    
+}
+
+.intro-text p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: left; /* Align text to the left */
+    margin: 0;
+}
+
+/* Testimonials Section Styling */
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 50px;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(185, 229, 244, 0.986); /* Updated background color with opacity */
+    transition: transform 0.2s ease-in-out;
+}
+
+.testimonial-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.testimonial-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.testimonial-card p:nth-child(2) {
+    font-style: italic;
+    color: #999;
+}
+
+@media (max-width: 768px) {
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Button Styles */
+.explore-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Change as needed */
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.explore-button:hover {
+    background-color: #0056b3; /* Change as needed */
+    transform: scale(1.05);
+}

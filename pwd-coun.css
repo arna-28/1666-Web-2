@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    width: 50px;
+    top: 50%;
+    transform: translateY(-50%); /* Center the logo vertically */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.abilities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.ability-card {
+    background-color: rgba(200,244,242,0.986);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    padding: 20px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.ability-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(238,74,3,0.856)
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #3b5998;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+p {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #219150;
+}
+
+.info {
+    display: none;
+    margin-top: 15px;
+}
+
+.counselor-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.counselor-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.counselor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.counselor-card h4 {
+    font-size: 1.2rem;
+    color: #4a90e2;
+}
+
+footer {
+    background-color: #4a90e2;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+}

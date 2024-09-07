@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bot Interface</title>
+  <link rel="stylesheet" href="<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css' }}">">
+</head>
+<body>
+<div class="fullscreen-container">
+  <!-- Welcome message section -->
+  <div class="welcome-message" id="welcomeMessage">
+    <h1>Let's START your Journey from here...</h1>
+    <p>Feel free to ask anything ;-)</p>
+  </div>
+
+  <!-- Options section -->
+  <div class="options" id="optionsSection">
+  </div>
+
+  <!-- Message display section -->
+  <div class="message-display" id="messageDisplay">
+    <!-- Messages will be shown here -->
+  </div>
+
+  <!-- Message bar section -->
+  <div class="message-bar">
+    <input type="text" name="placeholder="Type your message..." id="userInput">
+    <button id="sendBtn">Send</button>
+  </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
